@@ -1,0 +1,17 @@
+.nav-bar__link {
+  display: inline-block;
+  margin: 5px 2%;
+  padding: 12px;
+  color: rgb(4, 100, 253);
+  border-radius: 20px;
+  align-content: center;
+
+  &--active {
+    background: #323337;
+    color: white;
+  }
+}
+
+.nav-bar__link:hover {
+  background-color: #aaa;
+}
