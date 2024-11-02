@@ -38,6 +38,7 @@ img {
     bottom: 0;
     background-color: $color_fondo;
     padding: 1vh 30% 1vh 13%;
+    border: 1vh solid $color_borde;
   }
 
   .telefono{
@@ -46,6 +47,7 @@ img {
     bottom: 0;
     background-color: $color_fondo;
     padding: 1vh 13% 1vh 30%;
+    border: 1vh solid $color_borde;
   }
 }
 
