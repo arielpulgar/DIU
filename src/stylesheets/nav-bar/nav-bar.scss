@@ -1,41 +1,51 @@
-.menu-container{
-  .nav-bar {
-    margin:  0 5%;
-    display: flex;
-    background-color: #ccc;
-    padding-left: 20px;
-    border-radius: 40px;
-  }
-  #menu{
-    display: none;
-  }
-  .menu-icon{
-    height: 40px;
-    filter: invert(82%) sepia(5%) saturate(0%) hue-rotate(161deg) brightness(100%) contrast(95%);
-  }
-  label{
-    cursor: pointer;
-    display: none;
+$color_fondo: #00a122;
+$color_borde: #9e9e9e;
+$alto_img: 8vh;
+$tam_circulo: 5vh;
+$altura_circulo: 5vh;
+
+img {
+  position: relative;
+  height: $alto_img;
+  aspect-ratio: 1 / 1;
+}
+.iconos {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  border-top: 1vh solid $color_borde;
+  background-color: $color_borde;
+  justify-content: space-around;
+  align-items: center;
+
+  .ubicacion {
+    position: relative;
+    bottom: $altura_circulo;
+    text-align: center;
+    background-color: $color_fondo;
+    border-radius: 100%;
+    padding: $tam_circulo;
+    z-index: 2;
+    border: 1vh solid $color_borde;
   }
 
-  @media(max-width:991px){
-    .nav-bar {
-      position: fixed;
-      top: 80px;
-      left: 0;
-      right: 0;
-      display: none;
-    }
-    label {
-      position: fixed;
-      display: initial;
-      top: 15px;
-      right: 20px;
-    }
+  .instruccion{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: $color_fondo;
+    padding: 1vh 30% 1vh 13%;
+  }
 
-    #menu:checked ~ .nav-bar{
-      display: flex;
-    }
+  .telefono{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: $color_fondo;
+    padding: 1vh 13% 1vh 30%;
   }
 }
 

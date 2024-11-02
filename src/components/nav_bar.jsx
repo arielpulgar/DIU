@@ -1,6 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import menu_img from '../assets/menu.png'
+import telefono from '../assets/tel.png'
+import ubicacion from '../assets/ubi.png'
+import instruccion from '../assets/ins.png'
 
 export const NavBar = () => {
   const navLinkClass = ({ isActive }) => {
@@ -8,27 +10,26 @@ export const NavBar = () => {
     if (isActive) classes.push('nav-bar__link--active')
     return classes.join(' ')
   }
-  return (
-    <div className='menu-container'>
-      <input type="checkbox" id="menu" />
-      <label for="menu">
-        <img src={menu_img} class="menu-icon" alt=""/>
-      </label>
-      <div className='nav-bar'>
-        <NavLink
-          className={navLinkClass}
-          to='/'
-        >
-          Inicio
-        </NavLink>
-        <NavLink
-          className={navLinkClass}
-          to='/lightbulb'
-        >
-          Ampolleta
-        </NavLink>
-      </div>
+  return (     
+    <div className='iconos'>
+      <NavLink className={navLinkClass} to='/'>
+        <div>
+          <img src={instruccion} className='instruccion'/>
+        </div>
+      </NavLink>
+      <NavLink className={navLinkClass} to='/lightbulb'>
+        <div>
+          <img src={ubicacion} className='ubicacion'/>
+        </div>
+      </NavLink>
+      <NavLink className={navLinkClass} to='/lightbulb'>
+        <div>
+          <img src={telefono} className='telefono' />
+        </div>
+      </NavLink>
     </div>
+
+    
   )
 }
  

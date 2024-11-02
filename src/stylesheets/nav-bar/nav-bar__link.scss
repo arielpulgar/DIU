@@ -7,11 +7,14 @@
   align-content: center;
 
   &--active {
-    background: #323337;
-    color: white;
+    img{
+      filter: sepia(0.8);
+    }
   }
 }
 
 .nav-bar__link:hover {
-  background-color: #aaa;
+  img{
+    filter: sepia(10);
+  }
 }
