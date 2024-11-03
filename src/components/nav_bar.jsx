@@ -11,8 +11,8 @@ export const NavBar = () => {
     return classes.join(' ')
   }
   return (     
-    <div className='iconos'>
-      <NavLink className={navLinkClass} to='/'>
+    <div className='iconos_navbar'>
+      <NavLink className={navLinkClass} to='/instrucciones'>
         <div>
           <img src={instruccion} className='instruccion'/>
         </div>
@@ -22,9 +22,9 @@ export const NavBar = () => {
           <img src={ubicacion} className='ubicacion'/>
         </div>
       </NavLink>
-      <NavLink className={navLinkClass} to='/lightbulb'>
+      <NavLink className={navLinkClass} to='/contacto'>
         <div>
-          <img src={telefono} className='telefono' />
+          <img src={telefono} className='contacto' />
         </div>
       </NavLink>
     </div>

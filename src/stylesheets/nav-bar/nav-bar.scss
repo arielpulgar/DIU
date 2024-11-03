@@ -9,8 +9,9 @@ img {
   height: $alto_img;
   aspect-ratio: 1 / 1;
 }
-.iconos {
+.iconos_navbar {
   position: fixed;
+  z-index: 10;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -28,7 +29,7 @@ img {
     background-color: $color_fondo;
     border-radius: 100%;
     padding: $tam_circulo;
-    z-index: 2;
+    z-index: 3;
     border: 1vh solid $color_borde;
   }
 
@@ -39,15 +40,17 @@ img {
     background-color: $color_fondo;
     padding: 1vh 30% 1vh 13%;
     border: 1vh solid $color_borde;
+    z-index: 2;
   }
 
-  .telefono{
+  .contacto{
     position: absolute;
     right: 0;
     bottom: 0;
     background-color: $color_fondo;
     padding: 1vh 13% 1vh 30%;
     border: 1vh solid $color_borde;
+    z-index: 2;
   }
 }
 

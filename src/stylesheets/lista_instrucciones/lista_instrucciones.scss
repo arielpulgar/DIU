@@ -1,0 +1,49 @@
+.card {
+    position: relative;
+    min-height: 85vh;
+    background-color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    background-color: #00a122;
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 90%;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    margin:5%;
+  }
+  
+  .button {
+    width: 250px;
+    height: 30px;
+    background-color: #00a122;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .footer {
+    background-color: #00a122;
+    padding: 3% 50%;
+    position: absolute;
+    height: 5vh;
+    bottom: 0;
+  }
+  .facke {
+    background-color: transparent;
+    padding: 3% 50%;
+    position: static;
+    bottom: 0;
+  }
+  
