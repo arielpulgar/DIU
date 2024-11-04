@@ -6,11 +6,11 @@ const RecyclingInstructions = () => {
         <div className='card'>
             <div className='header'>Instrucciones</div>
             <div className='content-instruccion'>
-                <h2 className='title'>Reciclar plástico correctamente</h2>
+                <h2 className='title'>Reciclar latas de aluminio correctamente</h2>
                 <ul className='list'>
-                <li>Lava y enjuaga los envases de plástico antes de depositarlos en el contenedor. De esta forma, se evitarán los malos olores y se facilitará el proceso de reciclaje.</li>
-                <li>Separa los envases de plástico por tipos de material. Esto ayudará a mejorar la calidad del material reciclado.</li>
-                <li>Deposita los envases de plástico en el contenedor de envases correctamente. No los aplastes ni los dejes abiertos.</li>
+                <li>Lavar y desinfectar las latas después de usarlas. Luego dejarlas secar por completo para evitar hongos u oxidación.</li>
+                <li>En el caso de latas tipo bebida, quitar el tap. En cambio si su lata es del tipo donde se almacenan comestibles, retirar la tapa por completo antes de reciclar.</li>
+                <li>Se recomienda en la medida de lo posible aplastar la lata antes de depositarla.</li>
                 </ul>
             </div>
         </div>

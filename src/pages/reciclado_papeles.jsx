@@ -6,11 +6,11 @@ const RecyclingInstructions = () => {
         <div className='card'>
             <div className='header'>Instrucciones</div>
             <div className='content-instruccion'>
-                <h2 className='title'>Reciclar plástico correctamente</h2>
+                <h2 className='title'>Reciclar papel correctamente</h2>
                 <ul className='list'>
-                <li>Lava y enjuaga los envases de plástico antes de depositarlos en el contenedor. De esta forma, se evitarán los malos olores y se facilitará el proceso de reciclaje.</li>
-                <li>Separa los envases de plástico por tipos de material. Esto ayudará a mejorar la calidad del material reciclado.</li>
-                <li>Deposita los envases de plástico en el contenedor de envases correctamente. No los aplastes ni los dejes abiertos.</li>
+                <li>Asegurarse que el papel que se tiene pueda ser reciclado. Los papeles que se reciclan comúnmente son: Periódicos, revistas, folletos publicitarios, hojas de cuaderno, hojas de libretas y papel de impresora. </li>
+                <li>Antes de depositarlo en el contenedor, elimina las grapas, clips o cualquier material extra que no forme parte del papel.</li>
+                <li>Evita el papel húmedo o mojado, este puede contaminar otros papeles y no ser reciclable.</li>
                 </ul>
             </div>
         </div>

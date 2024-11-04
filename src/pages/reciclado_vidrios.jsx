@@ -6,11 +6,11 @@ const RecyclingInstructions = () => {
         <div className='card'>
             <div className='header'>Instrucciones</div>
             <div className='content-instruccion'>
-                <h2 className='title'>Reciclar plástico correctamente</h2>
+                <h2 className='title'>Reciclar vidrios correctamente</h2>
                 <ul className='list'>
-                <li>Lava y enjuaga los envases de plástico antes de depositarlos en el contenedor. De esta forma, se evitarán los malos olores y se facilitará el proceso de reciclaje.</li>
-                <li>Separa los envases de plástico por tipos de material. Esto ayudará a mejorar la calidad del material reciclado.</li>
-                <li>Deposita los envases de plástico en el contenedor de envases correctamente. No los aplastes ni los dejes abiertos.</li>
+                <li>Los objetos de vidrios que pueden ser reciclados son los siguientes: Botellas, envases y frascos de vidrio.</li>
+                <li>Lavar y desinfectar los envases/botellas después de usarlas. Luego dejarlas secar por completo para evitar hongos y malos olores.</li>
+                <li>Asegurarse que cualquier botella o envase se encuentre sin la tapa.</li>
                 </ul>
             </div>
         </div>
