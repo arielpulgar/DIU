@@ -76,3 +76,15 @@ li {
     width: 300px;
   }
 }
+@media(max-width:1300px){
+  .content-instruccion {
+    margin: 0% auto;
+    padding: 20px 20%;
+  }
+}
+@media(max-width:900px){
+  .content-instruccion {
+    margin: 0% auto;
+    padding: 20px 10% 10dvh 7%;
+  }
+}

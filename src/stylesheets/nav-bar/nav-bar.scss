@@ -1,8 +1,11 @@
 $color_fondo: #00a122;
-$color_borde: #9e9e9e;
+$color_borde: #bababa;
+$color_back: #9e9e9e;
 $alto_img: 8vh;
 $tam_circulo: 5vh;
 $altura_circulo: 5vh;
+$alto_img_peque: 12vw;
+$tam_circulo_peque: 8vw;
 
 img {
   position: relative;
@@ -17,8 +20,8 @@ img {
   width: 100%;
   height: 10vh;
   display: flex;
-  border-top: 1vh solid $color_borde;
-  background-color: $color_borde;
+  border-top: 1vh solid $color_back;
+  background-color: $color_back;
   justify-content: space-around;
   align-items: center;
 
@@ -38,7 +41,7 @@ img {
     left: 0;
     bottom: 0;
     background-color: $color_fondo;
-    padding: 1vh 30% 1vh 13%;
+    padding: 1vh 20vw 1vh 15vw;
     border: 1vh solid $color_borde;
     z-index: 2;
   }
@@ -48,9 +51,29 @@ img {
     right: 0;
     bottom: 0;
     background-color: $color_fondo;
-    padding: 1vh 13% 1vh 30%;
+    padding: 1vh 15vw 1vh 20vw;
     border: 1vh solid $color_borde;
     z-index: 2;
+  }
+
+  @media(max-width:600px){
+  height: 4vh;
+    .ubicacion {
+      padding: $tam_circulo_peque;
+    }
+
+    .instruccion{
+      padding: 1vh 15vw;
+    }
+  
+    .contacto{
+      padding: 1vh 15vw;
+    }
+
+    img {
+        height: $alto_img_peque;
+        aspect-ratio: 1 / 1;
+      }
   }
 }
 
