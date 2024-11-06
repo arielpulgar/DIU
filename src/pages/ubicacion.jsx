@@ -12,7 +12,7 @@ const UbiCard = () => {
 
   const renderStatus = () => {
     if (selectedFuente === "Seleccione un punto") {
-      return null; // No mostrar el estado si no se seleccionó un punto
+      return null;
     }
     return (
       <>
