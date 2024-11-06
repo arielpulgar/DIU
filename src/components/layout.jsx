@@ -5,6 +5,7 @@ import HomePage from '../pages/home_page'
 import LightbulbPage from '../pages/lightbulb_page'
 import Instrucciones from '../pages/lista_instrucciones'
 import Contacto from '../pages/pagina_contacto'
+import Ubicacion from '../pages/ubicacion';
 
 import RecicladosAluminios from '../pages/reciclado_aluminios';
 import RecicladosCartones from '../pages/reciclado_cartones';
@@ -23,7 +24,7 @@ const Layout = () => {
         <div className='layout__page'>
           <Routes>
             <Route path='/' element={<HomePage />} />
-            <Route path='/lightbulb' element={<LightbulbPage />} />
+            <Route path='/ubicacion' element={<Ubicacion />} />
             <Route path='/instrucciones' element={<Instrucciones />} />
             <Route path='/contacto' element={<Contacto />} />
 

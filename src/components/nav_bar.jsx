@@ -17,7 +17,7 @@ export const NavBar = () => {
           <img src={instruccion} className='instruccion'/>
         </div>
       </NavLink>
-      <NavLink className={navLinkClass} to='/lightbulb'>
+      <NavLink className={navLinkClass} to='/ubicacion'>
         <div>
           <img src={ubicacion} className='ubicacion'/>
         </div>
