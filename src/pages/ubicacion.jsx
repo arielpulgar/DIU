@@ -10,25 +10,38 @@ const UbiCard = () => {
     setSelectedFuente(fuente);
   };
 
-  return (
-    <div className="card">
-      <div className="header">BUSCADOR DE PUNTOS</div>
-      <div className="content">
-        <img src={maps} className="mapa" alt="Mapa"/>
-        
-        <h2 className="sub-title">{selectedFuente}</h2>
-
+  const renderStatus = () => {
+    if (selectedFuente === "Seleccione un punto") {
+      return null; // No mostrar el estado si no se seleccionó un punto
+    }
+    return (
+      <>
         <p className="title-texto-mapa"><strong>Estado de los contenedores</strong></p>
         <p className="texto-mapa"><strong>Contenedor de papeles</strong><br />{getRandomStatus()}</p>
         <p className="texto-mapa"><strong>Contenedor de vidrios</strong><br />{getRandomStatus()}</p>
         <p className="texto-mapa"><strong>Contenedor de aluminios</strong><br />{getRandomStatus()}</p>
         <p className="texto-mapa"><strong>Contenedor de cartones</strong><br />{getRandomStatus()}</p>
         <p className="texto-mapa"><strong>Contenedor de plásticos</strong><br />{getRandomStatus()}</p>
-      </div>
-      <div className="puntos">
-        <button className='mardoqueo' onClick={() => handleFuenteClick("Fuente Mardoqueo")}>PUNTO</button>
-        <button className='oxxo' onClick={() => handleFuenteClick("OXXO")}>OXXO</button>
-        <button className='amadeus' onClick={() => handleFuenteClick("Amadeus Pizza")}>Amadeus Pizza</button>
+      </>
+    );
+  };
+
+  return (
+    <div className="card">
+      <div className="header">BUSCADOR DE PUNTOS</div>
+      <div className="content">
+        <div className="mapa-container">
+          <img src={maps} className="mapa" alt="Mapa"/>
+          <div className="puntos">
+              <button className='mardoqueo' onClick={() => handleFuenteClick("Fuente Mardoqueo")}></button>
+              <button className='oxxo' onClick={() => handleFuenteClick("OXXO")}></button>
+              <button className='amadeus' onClick={() => handleFuenteClick("Amadeus Pizza")}></button>
+          </div>
+        </div>
+        <h2 className={`sub-title ${selectedFuente !== "Seleccione un punto" ? 'selected' : ''}`}>
+          {selectedFuente}
+        </h2>
+        {renderStatus()}
       </div>
     </div>
   );
